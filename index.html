@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperature Conversion by Mark Anunciacion</title>
+
+    <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+
+<h1 class="head-title">Temperature Conversion</h1>
+
+<div class="content">
+    <ul>
+        <li>
+            <label >Fahrenheit</label>
+            <input type="number" id="faren" min="-9999" step="1" max="9999">
+        </li>
+        <li>
+            <label>Celsius</label>
+            <input readonly="yes" type="number" id="cel">
+        </li>
+        <div class="entries">
+        <li class="labels">
+            <label>Fahrenheit</label>
+            <label>Celsius</label>
+        </li>
+        <li>
+            <textarea readonly="yes" id="entries"></textarea>
+        </li>
+        <li class="buttons">
+            <button id="conv" onclick="f2c()">Convert</button>
+            <button id="avg" onclick="avg()">Average</button>
+            <button id="rst" onclick="erase()">Reset</button>
+        </li>
+        </div>
+    </ul>
+</div>
+
+</body>
+</html>
